@@ -1136,7 +1136,7 @@ fieldset.radio.btn-group label.active {
   max-width: 860px;
   margin: 0 auto;
   background: #fff;
-  padding: 20px 0;
+  padding: 0 0;
 }
 body:before {
   content: "";
@@ -1483,6 +1483,7 @@ body:before {
 #grid4wrap h5,
 #grid4wrap h6 {
   color: #666;
+  font-family: helvetica neue;
 }
 #grid4wrap .zen-container {
   
@@ -1491,7 +1492,7 @@ body:before {
   border-top: none;
   
   border-bottom: 1px solid #eee;
-  padding: 20px 0;
+  padding: 0 0;
 }
 #grid5wrap {
   
@@ -1561,7 +1562,7 @@ body:before {
   border-top: none;
   
   border-bottom: 1px solid #eee;
-  padding: 20px 0;
+  padding: 0 0;
 }
 #bottomrow {
   float: left;
@@ -2340,9 +2341,6 @@ body #logowrap #tagline span {
 #navwrap ul.nav > li > a,
 #navwrap ul.nav > li .separator {
   text-align: left;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
   border-bottom: 0;
   padding: 8px;
   text-transform: uppercase;
@@ -2372,10 +2370,10 @@ body #logowrap #tagline span {
 }
 #navwrap ul.nav > li.dropdown > a,
 #navwrap ul.nav > li .separator {
-  background: url(../../../../images/navparent.png) no-repeat left 14px !important;
+ 
 }
 #navwrap ul.nav > li.active.dropdown > a {
-  background: #C44D58 url(../../../../images/navparent.png) no-repeat left 14px !important;
+  background: #C44D58 no-repeat left 14px !important;
   color: #fff;
 }
 #navwrap ul.nav > li b.caret,
@@ -2717,6 +2715,8 @@ h3 {
   margin: 10px 0;
   font-size: 16.8px;
   line-height: 24px;
+  color: #666;
+  font-family: "helvetica neue";
 }
 h3 small {
   font-size: 16px;
@@ -2761,7 +2761,7 @@ h2.article-title {
   padding-bottom: 10px;
 }
 p {
-  margin: 0 0 20px;
+  margin: 0 0 0px;
   line-height: 24px;
 }
 p small,
@@ -2812,6 +2812,7 @@ body h4,
 body h5,
 body h6 {
   color: #666;
+  font-family: helvetica neue;
 }
 blockquote {
   font-size: 2em;
@@ -3443,4 +3444,48 @@ div.collapse > div {
 #mainWrap  ul.nav.nav-tabs li a:hover {
   background: #fff !important;
   color: #C44D58 !important;
+}
+
+button {
+  color: #777;
+  /*background: #556270;*/
+  background: #fff;
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  border: 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+
+button:hover {
+  background: #fff;
+  text-decoration: none;
+  color: #c44d58;
+  outline: none;
+}
+
+button:focus {
+  background: #fff;
+  text-decoration: none;
+  color: #777;
+  outline: none;
+}
+
+button:active {
+  background: #fff;
+  text-decoration: none;
+  color: #777;
+  outline: none;
+}
+
+.profile-picture {
+  border-radius: 4px;
+}
+
+.profile-title {
+  color: #666;
+  font-family: helvetica neue;
 }
